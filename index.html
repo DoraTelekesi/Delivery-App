@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BestellApp</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/basket.css" />
+    <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/responsive.css" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./assets/img/ezgif-7edc7ee43299c3-removebg.png"
+    />
+
+    <script src="./script.js"></script>
+    <script src="./scripts/db.js"></script>
+    <script src="./scripts/template.js"></script>
+  </head>
+  <body onload="init()">
+    <div class="content">
+      <header>
+        <div class="header-title">
+          <span><h1>Beste</h1></span>
+          <span
+            ><img
+              class="font-img"
+              src="./assets/img/ezgif-7edc7ee43299c3-removebg.png"
+              alt=""
+          /></span>
+          <span><h1>App</h1></span>
+        </div>
+        <div class="header-img">
+          <img
+            class="main-img"
+            src="./assets/img/tomatoes-321671_1280.jpg"
+            alt=""
+          />
+        </div>
+      </header>
+
+      <main>
+        <div class="content-content">
+          <div class="test_content">
+            <div
+              class="resp-basket-btn dp-none-resp-btn"
+              id="resp-basket-btn"
+              onclick="toggleBasket()"
+            >
+              <h3>
+                Warenkorb
+                <h3
+                  class="resp-btn-items-in dp-none-resp-btn"
+                  id="resp-btn-items-in"
+                ></h3>
+              </h3>
+            </div>
+            <div class="first-section">
+              <h1>Pizzeria Taganana</h1>
+              <p class="reviews">Bewertung (4,7 von 5 Sternen)</p>
+            </div>
+            <div class="nav-dish-groups" id="nav-dish-groups">
+              <h3><a href="#Pizzas">Pizzas</a></h3>
+              <h3><a href="#Hamburgers">Hamburgers</a></h3>
+              <h3><a href="#Beilage">Beilage</a></h3>
+              <h3><a href="#Desserts">Desserts</a></h3>
+            </div>
+            <div id="dishes" class="dishes"></div>
+          </div>
+        </div>
+        <div
+          id="overlay"
+          class="overlay dp-none-overlay"
+          onclick="closeBasket()"
+        ></div>
+
+        <div class="basket-wrapper-visible dp-none" id="basket-wrapper">
+          <div class="basket" id="basket">
+            <div class="empty-basket dp-none-empty" id="empty-basket">
+              <img
+                class="basket-img"
+                src="./assets/icons/basket-shopping-solid.svg"
+                alt="Basket image"
+              />
+              <h2>Fülle deinen Warenkorb</h2>
+              <p>
+                Füge einige leckere Gerichte aus der Speisekarte hinzu und
+                bestelle dein Essen
+              </p>
+            </div>
+            <h2 class="basket-title" id="basket-title">Warenkorb</h2>
+            <div class="basket-elements" id="basket-elements"></div>
+
+            <div class="basket-price-elements" id="basket-price-elements"></div>
+          </div>
+        </div>
+      </main>
+
+      <footer>
+        <h2>Dora Telekesi 2025</h2>
+        <p></p>
+      </footer>
+    </div>
+  </body>
+</html>

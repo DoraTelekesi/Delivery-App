@@ -1,0 +1,116 @@
+@media (max-width: 800px) {
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.375);
+  }
+
+  .resp-basket-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    height: 60px;
+    background-color: rgb(11, 96, 223);
+    bottom: 10px;
+    z-index: 1000;
+    color: rgb(253, 253, 253);
+    font-size: 23px;
+    cursor: pointer;
+    gap: 20px;
+  }
+
+  .dp-none-resp-btn-item {
+    display: none;
+  }
+
+  .dp-none-overlay {
+    display: none;
+  }
+  main {
+    flex-direction: column;
+  }
+
+  .content-content {
+    width: 100%;
+    border-right: 2px solid rgb(158, 148, 148);
+  }
+
+  .basket-wrapper-visible {
+    position: fixed;
+    display: flex;
+    width: 91vw;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+    top: 110px;
+    border: 2px solid rgb(150, 44, 44);
+  }
+
+  .basket {
+    justify-content: center;
+    height: 100%;
+  }
+
+  .empty-basket {
+    justify-content: center;
+  }
+
+  .basket-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: scroll;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dp-none {
+    display: none;
+  }
+
+  .btn-up {
+    bottom: 88%;
+  }
+}
+
+@media (max-width: 500px) {
+  h3 {
+    font-size: 16px;
+  }
+
+  .first-section h1 {
+    font-size: 22px;
+  }
+  main {
+    align-items: center;
+  }
+  .test_content {
+    align-items: center;
+  }
+  .first-section {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  .nav-dish-groups {
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+  }
+
+  .empty-basket h2 {
+    font-size: 19px;
+  }
+
+  .empty-basket p {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,140 @@
+@font-face {
+  font-family: "DMSans";
+  src: url(./assets/fonts/DMSans/DMSans-Medium.ttf);
+}
+
+.font-img {
+  display: flex;
+  align-items: center;
+  width: 65px;
+  height: 65px;
+  position: absolute;
+  top: 5px;
+  left: 85px;
+  bottom: 10px;
+}
+
+.header-title {
+  color: rgb(34, 31, 31);
+  height: 80px;
+  background-color: rgb(208, 166, 28);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+  gap: 20px;
+}
+
+.header-img {
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-content {
+  width: 100%;
+  width: calc(100% - 308px);
+  padding: 10px;
+  border-left: 2px solid rgb(158, 148, 148);
+  border-top: 2px solid rgb(158, 148, 148);
+  border-bottom: 2px solid rgb(158, 148, 148);
+}
+
+.test_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.price-insets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addedDish {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.main-img {
+  height: 150px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.reviews {
+  color: rgb(208, 166, 28);
+}
+
+.nav-dish-groups {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  background-color: rgba(208, 166, 28, 0.408);
+  padding: 15px;
+}
+
+.nav-dish-groups a:hover {
+  text-shadow: 2px 2px 5px rgb(163, 80, 32);
+}
+
+.dish-img {
+  width: 100%;
+  object-fit: cover;
+  height: 130px;
+}
+.dish-group-header {
+  margin-bottom: 30px;
+}
+
+.dish-table {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid rgba(114, 109, 109, 0.423);
+}
+
+.dish-info {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 10px;
+}
+
+.price {
+  color: rgb(208, 166, 28);
+}
+
+.addBtn {
+  width: 30px;
+  height: 30px;
+  border-bottom: 2px solid rgba(114, 109, 109, 0.423);
+  border-left: 2px solid rgba(114, 109, 109, 0.423);
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  filter: invert(60%);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(190, 213, 131);
+  height: 80px;
+  flex-shrink: 0;
+}
