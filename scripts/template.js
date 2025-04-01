@@ -1,5 +1,5 @@
 function dishesTemplate(indexDish) {
-    return `<div class="dish-group" id="${myDishes[indexDish].title}">
+  return `<div class="dish-group" id="${myDishes[indexDish].title}">
           <div class="dish-group-header">
             <img
               class="dish-img"
@@ -11,11 +11,11 @@ function dishesTemplate(indexDish) {
           <div class="dish-list">
             ${displayLists(indexDish)}
           </div>
-        </div>`
-};
+        </div>`;
+}
 
-function dishListsTemplate(indexDish,indexList){
-    return `<div class="dish-table">
+function dishListsTemplate(indexDish, indexList) {
+  return `<div class="dish-table">
               <div class="dish-info">
                 <h3 class="name">${myDishes[indexDish].dishes[indexList].name}</h3>
                 <p class="description">
@@ -31,10 +31,10 @@ function dishListsTemplate(indexDish,indexList){
                   alt=""
                 />
               </span>
-            </div>`
-};
+            </div>`;
+}
 
-function basketTemplate(indexDish,indexList) {
+function basketTemplate(indexDish, indexList) {
   return `<div class="filled-basket" id ="item-${indexDish}-${indexList}">
             <h4 id="name-${indexDish}-${indexList}">${myDishes[indexDish].dishes[indexList].name}</h4>
             <div class="addedDish">
@@ -62,11 +62,11 @@ function basketTemplate(indexDish,indexList) {
                 alt="Delete item"
               /><tr>
             </div>
-            <div></div>`
-};
+            <div></div>`;
+}
 
-  function costsTemplate(){
-      return `<table id="table-price" class="table-price">
+function costsTemplate() {
+  return `<table id="table-price" class="table-price">
                 <tr>
                   <td>Zwischensumme</td>
                   <td id="subtotal"></td>
@@ -79,9 +79,9 @@ function basketTemplate(indexDish,indexList) {
                   <td><b>Gesamt</b></td>
                   <td id="total"></td>
                 </tr>
-              </table>`
-  };
+              </table>`;
+}
 
-  function foodOrderedTemplate() {
-    return `<div class="order-btn" id="order-btn" onclick="foodOrdered()">Bestellen!</div>`
-  }
+function foodOrderedTemplate() {
+  return `<div class="order-btn" id="order-btn" onclick="foodOrdered()">Bestellen!</div>`;
+}
